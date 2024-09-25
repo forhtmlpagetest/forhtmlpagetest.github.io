@@ -60,5 +60,18 @@ Click here to visit Example.com</a> -->
     <footer>
         <p>&copy; 2024 My Website</p>
     </footer>
+    <script>
+    // Function to open a new tab after a delay
+    function openWindowWithDelay() {
+        setTimeout(function() {
+            window.open('https://your-url.com', '_blank');
+        }, 3000);  // 3000 milliseconds = 3 seconds
+    }
+
+    // Automatically call the function on page load or after an event
+    window.onload = function() {
+        openWindowWithDelay();
+    };
+</script>
 </body>
 </html>
